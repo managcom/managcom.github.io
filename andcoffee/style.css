@@ -34,3 +34,20 @@ margin-top: 5pt;
   font-family: 'PT Sans Narrow', sans-serif;
   color: white;
 }
+
+
+.bot
+{
+
+  background-color: #282828;
+  position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+
+}
+
+.ttt
+{
+  margin-left: 10pt;
+}
