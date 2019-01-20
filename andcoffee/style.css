@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+html
+{
+  background-color: black;
+
+}
+
+
+.pic
+{
+  margin-top: 5pt;
+  width: 30%;
+}
+
+
+
+.pic2
+{
+
+  width: 17%;
+}
+
+
+.pic3
+{
+margin-top: 20pt;
+  width: 40%;
+}
+
+
+.text
+{
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: white;
+}
