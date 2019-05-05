@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/css/intlTelInput.css'>
+  <meta charset="UTF-8">
+  <title>ANDCOFFEE</title>
+  <style>
+    body
+    {
+        background-color: black;
+        position:relative;
+    }
+    .logo
+    {
+      width: 30%;
+      margin-left:  35%;
+      margin-top: 7%;
+    }
+    .edit1
+    {
+      margin-top: 2%;
+      width: 30%;
+      margin-left:  35%;
+    }
+    .demo{
+  text-align: center;
+}
+.demo input {
+  width: 300px;
+  border-radius: 2px;
+}
+.demo button {
+  height: 34px;
+  padding: 6px 12px;
+  margin-left: 10px;
+  background-color: #428bca;
+  border: 1px solid #357ebd;
+  border-radius: 2px;
+  color: #fff;
+}
+.demo ::-webkit-input-placeholder {
+  color: #bbb;
+}
+.demo ::-moz-placeholder {
+  color: #bbb;
+  opacity: 1;
+}
+.demo :-ms-input-placeholder {
+  color: #bbb;
+}
+
+#result{
+  padding-top: 20px;
+  text-align: center;
+}
+.gggg1
+{
+color: white;
+}
+  </style>
+</head>
+<body>
+  <img src="logo.svg" alt="" class="logo"> <br>
+  <div class="demo">
+      <h3 id="gggg1" class="gggg1">Введите ваш номер телефона</h3>
+      <input type="tel" id="phone" class="form-control"><button id="submit" type="submit">Авторизоваться</button>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/js/intlTelInput.js'></script>
+    <script>
+        $(function($) {
+    var telInput = $('#phone');
+    telInput.intlTelInput({
+      utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.8/js/utils.js',
+      initialCountry: 'ru',
+      onlyCountries: [ 'ru' ],
+    });
+    $('#submit').on('click', function() {
+     $('#gggg1').html('Вы успешно авторизовались!');
+    });
+  });
+         </script>
+</body>
+</html>
