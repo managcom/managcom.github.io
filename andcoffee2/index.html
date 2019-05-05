@@ -1,85 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/css/intlTelInput.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <style>
+
+    html{
+      background-color: black;
+    }
+    .pic
+    {
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 20%;
+    }
+    
+
+ 
+
+  .inin
+  {
+    margin-top: 20%;
+    border-radius: 50px;
+    padding-left: 5%;
+    margin-left: 5%;  
+      font-size: 45px;
+       height: 77px;
+       width: 85%;
+       font-family: 'Montserrat Alternates', sans-serif;
+       border: 3px solid white;
+  }
+
+  .ininin
+  {
+    margin-top: 7%;
+    border-radius: 50px;
+    height: 77px;
+    background-color: white;
+    width: 90%;
+    font-size: 45px;
+    margin-left:5%; 
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: 0;
+  }
+  .inin:focus
+  {
+   
+    border: 3px solid red;
+    transition: 10ms;
+  
+
+  }
+
+
+  </style>
+  <script>
+  </script>
   <meta charset="UTF-8">
   <title>ANDCOFFEE</title>
-  <style>
-    body
-    {
-        background-color: black;
-        position:relative;
-    }
-    .logo
-    {
-      width: 30%;
-      margin-left:  35%;
-      margin-top: 7%;
-    }
-    .edit1
-    {
-      margin-top: 2%;
-      width: 30%;
-      margin-left:  35%;
-    }
-    .demo{
-  text-align: center;
-}
-.demo input {
-  width: 300px;
-  border-radius: 2px;
-}
-.demo button {
-  height: 34px;
-  padding: 6px 12px;
-  margin-left: 10px;
-  background-color: #428bca;
-  border: 1px solid #357ebd;
-  border-radius: 2px;
-  color: #fff;
-}
-.demo ::-webkit-input-placeholder {
-  color: #bbb;
-}
-.demo ::-moz-placeholder {
-  color: #bbb;
-  opacity: 1;
-}
-.demo :-ms-input-placeholder {
-  color: #bbb;
-}
-
-#result{
-  padding-top: 20px;
-  text-align: center;
-}
-.gggg1
-{
-color: white;
-}
-  </style>
 </head>
 <body>
-  <img src="logo.svg" alt="" class="logo"> <br>
-  <div class="demo">
-      <h3 id="gggg1" class="gggg1">Введите ваш номер телефона</h3>
-      <input type="tel" id="phone" class="form-control"><button id="submit" type="submit">Авторизоваться</button>
-    </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/js/intlTelInput.js'></script>
-    <script>
-        $(function($) {
-    var telInput = $('#phone');
-    telInput.intlTelInput({
-      utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.8/js/utils.js',
-      initialCountry: 'ru',
-      onlyCountries: [ 'ru' ],
-    });
-    $('#submit').on('click', function() {
-     $('#gggg1').html('Вы успешно авторизовались!');
-    });
-  });
-         </script>
+  <img class='pic' src="logo.svg" alt=""> <br>
+  <input type="text" class="inin" placeholder="Введите ваш номер телефона тут">  <input class="ininin" type="button" value="Авторизоваться">
 </body>
 </html>
